@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Italian Deli Express.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>B1D9A23DFF9259B4A70D7DA562C4BDAF0E74DC8C</string>
+				<key>dateExpires</key>
+				<string>8/12/21</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>34NQG5CGVN.com.innovasystem.pizzeria</string>
+				<key>aps-environment</key>
+				<string>development</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>34NQG5CGVN</string>
+				<key>get-task-allow</key>
+				<true/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>34NQG5CGVN.com.innovasystem.pizzeria</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>Italian Deli Express.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>0fed0bf9-723e-4803-ab84-3a1487520a59</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: com.innovasystem.pizzeria</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>34NQG5CGVN</string>
+				<key>name</key>
+				<string>Raffaele Magnalarlo</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

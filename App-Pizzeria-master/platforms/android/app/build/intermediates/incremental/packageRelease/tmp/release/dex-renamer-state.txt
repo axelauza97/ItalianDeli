@@ -1,0 +1,7 @@
+#Mon Jul 06 09:00:44 ECT 2020
+base.0=/home/edward/Documents/Cursos/Ionic/Pizzería corregida generación de apk/App-Pizzeria-master/platforms/android/app/build/intermediates/transforms/dexMerger/release/0
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/home/edward/Documents/Cursos/Ionic/Pizzería corregida generación de apk/App-Pizzeria-master/platforms/android/app/build/intermediates/transforms/dexMerger/release/0

@@ -1,0 +1,128 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Formulario de Registro</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding class="form-content">
+    <form class="form" [formGroup]="validations_form" (ngSubmit)="onSubmit(validations_form.value)">
+        <div class="user-photo" padding-top>
+            <ion-avatar>
+                <img *ngIf="datosUsuario.imagenUrl == null &&  imagenPerfilBase64 == null " src="assets/imgs/profile_avatar.png" (click)="abrirGaleria()">
+                <img *ngIf="datosUsuario.imagenUrl != null  && imagenPerfilBase64 == null" src="{{datosUsuario.imagenUrl}}" (click)="abrirGaleria()">
+                <img *ngIf="imagenPerfilBase64 != null" [src]="imagenPerfilBase64" (click)="abrirGaleria()">
+            </ion-avatar>
+        </div>
+        <ion-item>
+            <ion-label floating color="primary"><strong>Documento de identidad (opcional)</strong></ion-label>
+            <ion-input type="text" [(ngModel)]="datosUsuario.cedula" formControlName="cedula"></ion-input>
+        </ion-item>
+        <div class="validation-errors">
+            <ng-container *ngFor="let validation of validation_messages.cedula">
+                <div class="error-message" *ngIf="validations_form.get('cedula').hasError(validation.type) && (validations_form.get('cedula').dirty || validations_form.get('cedula').touched)">
+                    {{ validation.message }}
+                </div>
+            </ng-container>
+        </div>
+        <ion-item>
+            <ion-label floating color="primary">Nombres (obligatorio)</ion-label>
+            <ion-input type="text" [(ngModel)]="datosUsuario.nombres" formControlName="nombres"></ion-input>
+        </ion-item>
+        <div class="validation-errors">
+            <ng-container *ngFor="let validation of validation_messages.nombres">
+                <div class="error-message" *ngIf="validations_form.get('nombres').hasError(validation.type) && (validations_form.get('nombres').dirty || validations_form.get('nombres').touched)">
+                    {{ validation.message }}
+                </div>
+            </ng-container>
+        </div>
+        <ion-item>
+            <ion-label floating color="primary">Apellidos (obligatorio)</ion-label>
+            <ion-input type="text" [(ngModel)]="datosUsuario.apellidos" formControlName="apellidos"></ion-input>
+        </ion-item>
+        <div class="validation-errors">
+            <ng-container *ngFor="let validation of validation_messages.apellidos">
+                <div class="error-message" *ngIf="validations_form.get('apellidos').hasError(validation.type) && (validations_form.get('apellidos').dirty || validations_form.get('apellidos').touched)">
+                    {{ validation.message }}
+                </div>
+            </ng-container>
+        </div>
+        <ion-item>
+            <ion-label floating color="primary">Teléfono (obligatorio)</ion-label>
+            <ion-input type="text" [(ngModel)]="datosUsuario.telefono" formControlName="telefono"></ion-input>
+        </ion-item>
+        <div class="validation-errors">
+            <ng-container *ngFor="let validation of validation_messages.telefono">
+                <div class="error-message" *ngIf="validations_form.get('telefono').hasError(validation.type) && (validations_form.get('telefono').dirty || validations_form.get('telefono').touched)">
+                    {{ validation.message }}
+                </div>
+            </ng-container>
+        </div>
+        <ion-item>
+            <ion-label floating color="primary">Dirección (opcional)</ion-label>
+            <ion-input type="text" [(ngModel)]="datosUsuario.direccion" formControlName="direccion"></ion-input>
+        </ion-item>
+        <div class="validation-errors">
+            <ng-container *ngFor="let validation of validation_messages.direccion">
+                <div class="error-message" *ngIf="validations_form.get('direccion').hasError(validation.type) && (validations_form.get('direccion').dirty || validations_form.get('direccion').touched)">
+                    {{ validation.message }}
+                </div>
+            </ng-container>
+        </div>
+        <ion-item>
+            <ion-label floating color="primary">Fecha de nacimiento</ion-label>
+            <!-- formControlName="DoB" formControlName="DoB"-->
+            <ion-datetime displayFormat="D/MM/YYYY" [(ngModel)]="datosUsuario.DoB" [ngModelOptions]="{standalone: true}" pickerFormat="D MMM YYYY" min="1940" max="{{year}}" monthShortNames='Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic'>
+            </ion-datetime>
+        </ion-item>
+        <!--<div class="validation-errors">
+            <ng-container *ngFor="let validation of validation_messages.DoB">
+                <div class="error-message" *ngIf="validations_form.get('DoB').hasError(validation.type) && (validations_form.get('DoB').dirty || validations_form.get('DoB').touched)">
+                    {{ validation.message }}
+                </div>
+            </ng-container>
+        </div>-->
+        <ion-item>
+            <ion-label floating color="primary">Teléfono fijo (opcional)</ion-label>
+            <ion-input type="text" [(ngModel)]="datosUsuario.tel_fijo" formControlName="tel_fijo"></ion-input>
+        </ion-item>
+        <div class="validation-errors">
+            <ng-container *ngFor="let validation of validation_messages.tel_fijo">
+                <div class="error-message" *ngIf="validations_form.get('tel_fijo').hasError(validation.type) && (validations_form.get('tel_fijo').dirty || validations_form.get('tel_fijo').touched)">
+                    {{ validation.message }}
+                </div>
+            </ng-container>
+        </div>
+        <ion-item>
+            <ion-label floating color="primary">Correo (obligatorio)</ion-label>
+            <ion-input type="email" formControlName="correo" [(ngModel)]="datosUsuario.correo" class="form-controll" required></ion-input>
+        </ion-item>
+        <div class="validation-errors">
+            <ng-container *ngFor="let validation of validation_messages.correo">
+                <div class="error-message" *ngIf="validations_form.get('correo').hasError(validation.type) && (validations_form.get('correo').dirty || validations_form.get('correo').touched)">
+                    {{ validation.message }}
+                </div>
+            </ng-container>
+        </div>
+        <ion-item>
+            <ion-label floating color="primary">Contraseña (obligatorio)</ion-label>
+            <!--[type]="passwordType"-->
+            <ion-input type="{{showPass ? 'text' : 'password'}}" [(ngModel)]="datosUsuario.contrasena" #contrasena formControlName="contrasena"></ion-input>
+            <button ion-button type="button" clear color="dark" item-right (click)="togglePasswordClick()">
+              <ion-icon class="icono-input" text-right  id="iconIntro" [name]="passwordToggleIcon" style="zoom:2.0;"></ion-icon>
+            </button>
+            <!--<ion-icon item-end [name]="passwordIcon" class="passwordIcon" (click)='hideShowPassword()'></ion-icon>-->
+        </ion-item>
+        <div class="validation-errors">
+            <ng-container *ngFor="let validation of validation_messages.contrasena">
+                <div class="error-message" *ngIf="validations_form.get('contrasena').hasError(validation.type) && (validations_form.get('contrasena').dirty || validations_form.get('contrasena').touched)">
+                    {{ validation.message }}
+                </div>
+            </ng-container>
+        </div>
+        <ion-item id="checkitem" text-wrap>
+
+            <ion-label id="checklabel" floating color="primary"><a href="http://italiandeliexpress.com/?page_id=4560">Acepto Términos  y Condiciones</a></ion-label>
+            <ion-checkbox slot="end" [(ngModel)]="acuerdoPass" [ngModelOptions]="{standalone: true}"></ion-checkbox>
+        </ion-item>
+        <button ion-button full type="submit" [disabled]="!validations_form.valid">Guardar</button>
+    </form>
+</ion-content>
