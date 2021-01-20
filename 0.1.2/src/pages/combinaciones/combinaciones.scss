@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+page-combinaciones {
+    .formato-logo {
+        width: 30%;
+        height: 25%;
+        display: block;
+        margin: auto;
+    }
+    .formato-next {
+        width: 40px;
+        height: 50px;
+        margin-right: 5px;
+        margin: auto;
+        vertical-align: middle;
+    }
+    .formato-add {
+        width: 20px;
+        height: 20px;
+        //padding-left: 4px;
+        //margin-right: 5px;
+        //margin: auto;
+        //vertical-align: middle;
+    }
+    #mensaje {
+        margin-top: 20px;
+    }
+    .formato-remove {
+        width: 20px;
+        height: 20px;
+        //padding-right: 4px; //margin-right: 5px;
+        //margin: auto;
+        //vertical-align: middle;
+    }
+    .formato-next-car {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        margin: auto;
+        vertical-align: middle;
+    }
+    .fab {
+        contain: initial;
+        box-shadow: 0px white;
+    }
+    ion-fab {
+        ion-fab-list button[ion-fab] {
+            //display: flex;
+            overflow: visible;
+            div.label {
+                position: absolute;
+                right: 46px; //55px
+                height: 26px; //24px;
+                line-height: 15px; //46px
+                padding-left: 8px;
+                padding-right: 8px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                //border-radius: 3px;
+                //background-color: #ffff;
+                //background-image: url("../../assets/imgs/pizza_fab.png");
+                //vertical-align: middle
+            }
+            background-color: #2AB76F;
+            //button {
+            //margin-right: 100px; //}
+        }
+        ion-fab-list button[ion-fab]:nth-child(6) {
+            //background-image: url("../../assets/imgs/adicional_menu.png");
+            background-position: center;
+            background-size: 35px 35px; //;
+            height: 50px;
+            width: 50px;
+            /* You must set a specified height */
+            background-repeat: no-repeat;
+        }
+        ion-fab-list button[ion-fab]:nth-child(5) {
+            //background-image: url("../../assets/imgs/adicional_menu.png");
+            background-position: center;
+            background-size: 35px 35px; //;
+            height: 50px;
+            width: 50px;
+            /* You must set a specified height */
+            background-repeat: no-repeat;
+        }
+        ion-fab-list button[ion-fab]:nth-child(4) {
+            //background-image: url("../../assets/imgs/pizza_fab.png");
+            background-position: center;
+            background-size: 30px 30px;
+            height: 50px;
+            width: 50px;
+            /* You must set a specified height */
+            background-repeat: no-repeat;
+        }
+        ion-fab-list button[ion-fab]:nth-child(3) {
+            //background-image: url("../../assets/imgs/pizza_fab.png");
+            background-position: center;
+            background-size: 30px 30px;
+            height: 50px;
+            width: 50px;
+            /* You must set a specified height */
+            background-repeat: no-repeat;
+        }
+        ion-fab-list button[ion-fab]:nth-child(2) {
+            //background-image: url("../../assets/imgs/favorito_menu.png");
+            background-position: center;
+            background-size: 30px 30px; //300px 100px;
+            height: 50px;
+            width: 50px;
+            /* You must set a specified height */
+            background-repeat: no-repeat;
+        }
+        ion-fab-list button[ion-fab]:nth-child(1) {
+            //background-image: url("../../assets/imgs/pizza_menu.png");
+            background-position: center;
+            background-size: 35px 35px; //300px 100px;
+            height: 50px;
+            width: 50px;
+            /* You must set a specified height */
+            background-repeat: no-repeat;
+        }
+    }
+    /*.green-bg {
+        background-image: url("../../assets/imgs/pizza_fab.png");
+    }*/
+    .checkout-trip {
+        .trip-info {
+            .trip-image {
+                width: 100%;
+                height: 120px;
+                background-size: 100% auto;
+                background-position: center;
+                border-radius: 1rem 1rem 0 0;
+            }
+            .trip-features {
+                ion-icon {
+                    min-width: 1.5rem;
+                    text-align: center;
+                }
+            }
+        }
+        .item.no-border .item-inner {
+            padding-right: 0;
+            [item-end] {
+                margin: 0;
+            }
+        }
+    }
+    .formato-logo {
+        width: 30%;
+        height: 25%;
+        display: block;
+        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .imagen-boton {
+        //width: 85%;
+        //height: 80%;
+        height: 50px;
+        width: 30pxs;
+    }
+    .text-card-header {
+        //:nth-child(1)
+        //color: white;
+        height: 50%;
+        //background-color: aqua;
+        //vertical-align: middle;
+        //font-weight: 100px;
+        h4 {
+            padding-top: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        h5 {
+            padding-top: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        a {
+            padding-top: 10px;
+            color: white;
+            font-size: 10px;
+        }
+    }
+    .content-card-combo-title {
+        color: #C85256;
+        font-weight: bold;
+        font-family: "Hand Of Sean";
+    }
+    .text-card-header-combo {
+        //:nth-child(1)
+        //color: white;
+        height: cover;
+        //background-color: aqua;
+        //vertical-align: middle;
+        //font-weight: 100px;
+        h4 {
+            padding-top: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        h5 {
+            padding-top: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        a {
+            padding-bottom: 0px;
+            color: white;
+            font-size: 10px;
+        }
+    }
+    .formato-main-card {
+        background-color: white;
+        //border: 1px solid grey;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        border-radius: 0px! important;
+    }
+    .formato-card-header {
+        background-color: #C85256;
+    }
+    .formato-card-header-title {
+        //background-color: aqua;
+        height: cover;
+    }
+    .formato-card-content-row-1 {
+        ion-col {
+            width: cover;
+            //background-color: aqua;
+            //text-align: start
+            span {
+                font-size: 12px;
+                color: #C85256;
+            }
+            .title {
+                font-weight: bold;
+            }
+            .title-total {
+                font-size: 17px;
+                font-weight: bold;
+            }
+            .title-count {
+                float: left;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            .title-count:nth-child(1) {
+                padding-right: 10px;
+            }
+            img {
+                float: left;
+                padding: 0%;
+                width: 20px;
+                height: 20px;
+            }
+            img:nth-child(2) {
+                padding-right: 4px;
+            }
+            img:nth-child(4) {
+                padding-left: 4px;
+            }
+            img:nth-child(5) {
+                padding-left: 4px;
+            }
+        }
+    }
+    .card,
+    .card-md,
+    .card-ios {
+        //webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .formato-card-secondary {
+        background-color: transparent; // white;
+        border-style: none;
+        //border: 0.5px solid grey;
+        width: 95%;
+        height: cover; //100%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        padding-top: 3%;
+    }
+    .formato-card-terceary {
+        background-color: white;
+        border: 1px solid grey;
+        width: 100%;
+        //height: 300%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        ion-card-content {
+            background-color: #FAE6E4;
+        }
+    }
+    .formato-card-quarte {
+        background-color: transparent; // #C85256; // white;
+        border: 1px solid grey;
+        width: 100%;
+        height: 190%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        padding-bottom: 3%;
+        margin-bottom: 0%;
+        span {
+            color: white;
+            font-family: "Hand Of Sean";
+        }
+        .formato-titulo-pizza {
+            font-size: 10px;
+        }
+        .formato-contenido-pizza {
+            font-size: 7px;
+        }
+    }
+    .imagen-tamano {
+        //padding-top: 0;
+        //margin-top: -3%;
+        //width: 20%;
+        //height: 20%;
+        width: 90px;
+        height: cover;
+        padding-left: 2px;
+        //padding-top: 0;
+        margin-top: -20%;
+    }
+    .imagen-tamano-ultra {
+        //padding-top: 0;
+        //margin-top: -3%;
+        //width: 20%;
+        //height: 20%;
+        width: 70px;
+        height: cover;
+        padding-left: 2px;
+        //padding-top: 0;
+        margin-top: -30%;
+    }
+    .formato-span-secondary {
+        width: 100%;
+        font-size: 1.2em;
+        text-align: center;
+        color: rgba(0, 169, 93, 0.925);
+        margin-top: 2%;
+        margin-bottom: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .formato-span-secondary-ter {
+        width: 100%;
+        font-size: 1.2em;
+        color: rgba(0, 169, 93, 0.925);
+        margin-top: -10%;
+        margin-bottom: 5%;
+        margin-right: 8%;
+        margin-left: -5%;
+        text-align: right;
+        float: none;
+        font-weight: 600;
+    }
+    .imagen-pizza-tamano {
+        padding-top: 0;
+        margin-top: -2%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        height: 80%;
+    }
+    .imagen-pizza-card {
+        padding-top: 0;
+        margin-top: 4%;
+        margin-bottom: auto;
+        margin-left: 2%;
+        width: 35%;
+        height: 60%;
+    }
+    .imagen-promo-tamano {
+        //padding-top: 0%;
+        //margin-top: 0%;
+        //margin-bottom: -1%;
+        margin-left: 5px;
+        width: 50px;
+        height: 50px;
+        //width: 30%;
+        //height: 30%;
+    }
+    .imagen-promo-tamano-adicional {
+        //padding-top: 0%;
+        //margin-top: 0%;
+        //margin-bottom: -1%;
+        margin-left: 10px;
+        width: 30px;
+        height: 50px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        //width: 30%;
+        //height: 30%;
+    }
+    .imagen-promo-tamano-card {
+        padding-top: 0%;
+        margin-top: 0%;
+        margin-bottom: -1%;
+        margin-left: 2%;
+        width: 17%;
+        height: 17%;
+    }
+    .checkbox-formato {
+        margin-top: 5%;
+        margin-bottom: 3%;
+        margin-left: 4%;
+        font-size: 20%;
+        zoom: 1.1;
+    }
+    .campo-formato {
+        border: 1px solid grey;
+    }
+    .formato-fuente {
+        margin-top: -5%;
+        font-size: 100%;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        font-weight: 600;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-bottom: 0px;
+    }
+    .formato-fuente-second {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0%;
+        margin-left: -3%;
+        margin-right: -3%;
+        color: black;
+        font-size: 0.65em;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+    .formato-titulo {
+        width: 100%;
+        margin-top: -25%;
+        margin-left: 13%;
+        font-size: 100%;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+    }
+    .formato-titulo-main {
+        width: 100%;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 110%;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+    }
+    .formato-titulo-second {
+        width: 100%;
+        margin-top: -20%;
+        margin-left: 15%;
+        font-size: 90%;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+    }
+    .formato-detalle {
+        width: 100%;
+        margin-top: 1%;
+        margin-left: 10%;
+        font-size: 100%;
+        font-family: 'Roboto', sans-serif;
+    }
+    .formato-detalle-combo {
+        width: 100%;
+        margin-top: 1%;
+        //margin-left: 10%;
+        font-size: 100%;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .formato-detalle-un {
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 10%;
+        margin-bottom: 3%;
+        font-size: 100%;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 0%;
+    }
+    .formato-detalle-second {
+        width: 100%;
+        margin-top: 1%;
+        margin-left: 10%;
+        font-size: 70%;
+        font-family: 'Roboto', sans-serif;
+    }
+    /*.imagen-tamano {
+        width: 90%;
+        height: 100%;
+    }*/
+}

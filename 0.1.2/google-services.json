@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "597411026712",
+    "firebase_url": "https://italiandeliexpress-8df32.firebaseio.com",
+    "project_id": "italiandeliexpress-8df32",
+    "storage_bucket": "italiandeliexpress-8df32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597411026712:android:ec03f8b579fa94ca52b06d",
+        "android_client_info": {
+          "package_name": "com.innovasystem.pizzeria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597411026712-4irkdf8bcideea9ejvn2un13s5saq8aa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.innovasystem.pizzeria",
+            "certificate_hash": "11665fc8ee661cf0fc744d553f93b0ec3a249c31"
+          }
+        },
+        {
+          "client_id": "597411026712-fdevgl2jflm25lq7ne2vccpped7ss6ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjH_CKAuihEXzRnD_5pO0HiqVXA8Yw9oA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597411026712-fdevgl2jflm25lq7ne2vccpped7ss6ne.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "597411026712-s22ddcskp52sff4k021pdj23s18qicq8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.innovasystem.pizzeria"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

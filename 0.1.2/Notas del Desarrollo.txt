@@ -1,0 +1,64 @@
+Durante el desarrollo, para poder realizar el login de Google, se tuvo que crear una 
+nueva cuenta de Firebase, por eso, este proyecto usa los archivos google-services.json y 
+GoogleService-Info.plist obtenidos de la nueva cuenta de Firebase
+
+Los servicios de GoogleMaps, todavia usa credenciales de la cuenta de Firebase anterior
+
+Por el cambio de los archivos mencionados arriba, el config.xml tambien ha sido modificado pero solo donde se colocan las credenciales para usar el plugin de google
+
+Todavia estan los archivos anteriores al cambio que estan con la extension txt
+
+En el archivo credenciales&comandos se encuentran credenciales usadas en este proyecto
+
+De alli, no se ha modificado nada mas para el desarrollo, solo la carpeta src, y las dependencias usadas se encuentran en el package.json
+
+La unica libreria nueva instalada fue la de cordova-plugin-google, el comando usado esta en el archivo credenciales
+
+Estos fueron los pasos qe tuve que seguir para poder correr el proyecto en mi computadora
+
+[7:23 p. m., 4/8/2020] Marlon: practicamente era arreglar las dependencias q habia
+[7:23 p. m., 4/8/2020] Marlon: me toco borrar el node_modules
+[7:23 p. m., 4/8/2020] Marlon: y el package-lock.json
+[7:23 p. m., 4/8/2020] Marlon: e instalar todo con esta linea
+[7:23 p. m., 4/8/2020] Marlon: npm install -f --save-dev --no-optional
+[7:23 p. m., 4/8/2020] Marlon: el no-optional
+[7:24 p. m., 4/8/2020] Marlon: porque habian agregado una bandera
+[7:24 p. m., 4/8/2020] Marlon: fsevent
+[7:24 p. m., 4/8/2020] Marlon: para macos
+[7:24 p. m., 4/8/2020] Marlon: despues instalar rxjs y rxjs compat
+[7:24 p. m., 4/8/2020] Marlon: a las versiones actuales
+[7:25 p. m., 4/8/2020] Marlon: los dos con las banderas -f --save-dev --no-optional
+[7:25 p. m., 4/8/2020] Marlon: npm install rxjs@6 rxjs-compat@6 --save-dev --no-optional -f por  compatibilidad
+[7:25 p. m., 4/8/2020] Marlon: npm rebuild node-sass -f --save-dev --no-optional
+[7:26 p. m., 4/8/2020] Marlon: reconstruir node-sass
+[7:26 p. m., 4/8/2020] Marlon: si tienen un problema con la reconstruccion
+[7:26 p. m., 4/8/2020] Marlon: tienen q arreglar el msbuild de visual studio
+[7:27 p. m., 4/8/2020] Marlon: npm i typescript@latest --save-dev --no-optional -f
+[7:27 p. m., 4/8/2020] Marlon: para ciertas cosas que no coje de typescript
+[7:27 p. m., 4/8/2020] Marlon: y nada mas
+[7:28 p. m., 4/8/2020] Marlon: creo q todo lo nuevo q se necesite instalar, habra q usar -f --save-dev --no-optional estas opciones
+[7:29 p. m., 4/8/2020] Marlon: ah y antes del rebuild de sass, npm install node-sass@latest -f --save-dev --no-optional instalar la ultima version de node-sass 
+
+
+
+si hay problemas con el keystore en linux por lo general, debera ir a platform/android/debug-signing.properties y en platform/android/release-signing.properties
+key.store=/PATH/TO/YOUR/KEYSTORE
+key.alias=your_alias
+key.store.password=key_store_pass
+key.alias.password=key_store_alias
+
+
+si hay problemas como este:
+Could not resolve all files for configuration ':app:debugCompileClasspath'.
+solo es cuestion de ir al build.grale y colocar del centro al final la linea "jcenter()"
+
+
+si hay problemas con la instalacion de algun plugin:
+Failed to install 'cordova-plugin-googlemaps': CordovaError: Using "requireCordovaModule" to load non-cordova module "fs" is not supported. Instead, add this module to your dependencies and use regular "require" to load it.
+Bajar la version de cordova de 9 a 8.1.2
+npm uninstall cordova
+npm cache clean --force
+npm i cordova@8.1.2
+
+
+ionic cordova prepare ios cuando solo quieras correr el codigo en otra maquina
