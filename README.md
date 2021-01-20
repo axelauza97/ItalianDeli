@@ -205,5 +205,5 @@ El modulo de pago en linea fue realizado por [Jaminson Riascos](https://github.c
 - [Ivan Aguirre](https://github.com/navi95f)
 - [Kevin Palacios](https://github.com/mrkevinomar)
 - [Geancarlo Murillo](https://github.com/gcmurillo)
-
+- [Edward Cruz Cruz](https://github.com/edwardcruzcruz)
 > Italian Deli Express | Innova System | ESPOL
