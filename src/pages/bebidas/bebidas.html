@@ -1,0 +1,60 @@
+<!--
+  Generated template for the BebidasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content>
+
+
+    <ion-list>
+        <ion-item *ngFor="let bebida of bebidas" style="background-color:transparent">
+
+            <ion-grid no-padding>
+
+                <ion-row>
+                    <!--margin-top-->
+                    <ion-col class="checkbox" width-10 center>
+                        <ion-item style="background-color:transparent" no-lines>
+                            <ion-checkbox mode="ios" [(ngModel)]="bebida.checked" (ionChange)="handlerCheckbox(bebida)" color="secondary_red"></ion-checkbox>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col width-30 class="body" center>
+                        <ion-item style="background-color:transparent" no-lines text-wrap>
+                            <span ion-text color="black"><strong>{{bebida.nombre}}</strong></span>
+                        </ion-item>
+                        <ion-row center margin-top>
+
+                            <ion-col width-40 text-center>
+                                <img [hidden]="bebida.cantidad < 2 " class="formato-remove" no-padding name="remove-circle" tappable (click)="disminuirCantidad(bebida)" src='assets/imgs/sub.png'>
+                                <!--<ion-icon name="remove-circle" class="text-2x" tappable (click)="disminuirCantidad(bebida)" [hidden]="bebida.cantidad < 2 " color="secondary_red"></ion-icon>-->
+                            </ion-col>
+                            <ion-col width-20 text-center>{{bebida.cantidad}}</ion-col>
+                            <ion-col width-40 text-center>
+                                <img class="formato-add" no-padding name="add-circle" tappable (click)="aumentarCantidad(bebida)" src='assets/imgs/add.png'>
+                                <!--<ion-icon name="add-circle" class="text-2x" tappable (click)="aumentarCantidad(bebida)" color="secondary_red"></ion-icon>-->
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                    <ion-col width-60 class="resumen">
+
+                        <ion-avatar item-end>
+                            <img width="50" height="50" float-right src="{{bebida.imagenUrl}}" />
+                        </ion-avatar>
+                        <h1 class="costo" text-right> ${{bebida.costoBase * bebida.cantidad | number : '1.2-2'}}</h1>
+                    </ion-col>
+
+                </ion-row>
+            </ion-grid>
+
+
+
+        </ion-item>
+    </ion-list>
+
+
+
+
+</ion-content>

@@ -1,0 +1,150 @@
+<!--
+  Generated template for the PerfilPage page.
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title> Contáctanos </ion-title>
+        <ion-buttons style="visibility: hidden" right>
+            <button ion-button icon-only>
+            <ion-icon name="create" item-right></ion-icon>
+        </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+    <!--<div class="user-photo" padding-top>
+        <ion-avatar>
+            <img *ngIf="datosUsuario.imagenUrl == null" src="https://t4.ftcdn.net/jpg/02/15/84/43/240_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg">
+            <img *ngIf="datosUsuario.imagenUrl != null" [src]="datosUsuario.imagenUrl">
+        </ion-avatar>
+    </div>-->
+
+    <ion-list>
+        <ion-item no-lines>
+            <ion-icon name="nombres" slot="start"></ion-icon>
+            <ion-label>
+                <p class="ContentContact" style="padding-top: 3px;font-size: 18px;">Convencionales</p>
+                <h2 text-center class="ContentContactConven" style="font-size: 25px; padding-top: 3px"><a href="tel:+59345034000">045034000</a> - <a href="tel:+59345035000">045035000</a></h2>
+            </ion-label>
+        </ion-item>
+        <ion-item no-lines>
+            <ion-icon name="correo" slot="start"></ion-icon>
+            <ion-label>
+                <p class="ContentContact" style="padding-top: 3px;padding-bottom: 3px">¿Alguna pregunta?</p>
+                <h2 text-center class="ContentContact"><a href="mailto:info@italiandeliexpress.com">info@italiandeliexpress.com</a></h2>
+            </ion-label>
+        </ion-item>
+        <ion-item no-lines>
+            <ion-icon name="telefono" slot="start"></ion-icon>
+
+            <ion-label>
+                <!--<ion-row>
+                    <ion-col>
+                        <p><strong>Whatsapp:</strong> </p>
+                    </ion-col>
+                </ion-row>
+                <ion-row style="margin-top: -3px">
+                    <ion-col col-12>
+                        <p><strong>Guayaquil Norte</strong> </p>
+                        <h2 style="font-size: 13px; padding-top: 3px"><a href="https://api.whatsapp.com/send?phone=593991196747">0991196747</a></h2>
+                    </ion-col>
+                </ion-row>
+                <ion-row style="margin-top: -3px">
+                    <ion-col col-12>
+                        <p><strong>Guayaquil  Sur</strong> </p>
+                        <h2 style="font-size: 13px; padding-top: 3px"><a href="https://api.whatsapp.com/send?phone=593991087056">0991087056</a></h2>
+                    </ion-col>
+                </ion-row>
+                <ion-row style="margin-top: -3px">
+                    <ion-col col-12>
+                        <p><strong>Durán Centro</strong> </p>
+                        <h2 style="font-size: 13px; padding-top: 3px"><a href="https://api.whatsapp.com/send?phone=593985207362">0985207362</a></h2>
+                    </ion-col>
+                </ion-row>-->
+                <ion-row style="margin-top: -3px">
+                    <ion-col text-center col-4>
+                        <p class="TitleContact" style="font-weight: bold">WHATSAPP</p>
+                        <p class="ContentContact">GYE NORTE </p>
+                        <h2 class="TitleContact" style="font-size: 13px; padding-top: 3px"><a style="color: #01DFA5 !important;" href="https://api.whatsapp.com/send?phone=593991196747">0991196747</a></h2>
+                    </ion-col>
+                    <ion-col text-center col-4>
+                        <p class="TitleContact">WHATSAPP </p>
+                        <p class="ContentContact">GYE SUR</p>
+                        <h2 class="TitleContact" style="font-size: 13px; padding-top: 3px"><a style="color: #01DFA5 !important;" href="https://api.whatsapp.com/send?phone=593991087056">0991087056</a></h2>
+                    </ion-col>
+                    <ion-col text-center col-4>
+                        <p class="TitleContact">WHATSAPP </p>
+                        <p class="ContentContact">DURÁN</p>
+                        <h2 class="TitleContact" style="font-size: 13px; padding-top: 3px"><a style="color: #01DFA5 !important;" href="https://api.whatsapp.com/send?phone=593985207362">0985207362</a></h2>
+                    </ion-col>
+                </ion-row>
+            </ion-label>
+        </ion-item>
+        <ion-item no-lines>
+            <ion-icon name="cedula" slot="start"></ion-icon>
+            <ion-label text-center>
+                <!--<p><strong>Nuestra página web</strong></p>-->
+                <h2 class="ContentContact"><a href="https://italiandeliexpress.com">www.italiandeliexpress.com</a></h2>
+            </ion-label>
+        </ion-item>
+        <ion-item no-lines>
+            <ion-icon name="telefono" slot="start"></ion-icon>
+
+            <ion-label text-center>
+                <ion-row>
+                    <ion-col>
+                        <p class="TitleContact">Síguenos</p>
+                    </ion-col>
+                </ion-row>
+                <ion-row style="margin-top: -3px">
+                    <ion-col col-1></ion-col>
+                    <ion-col text-center col-10>
+                        <div id="socialNetwork">
+                            <div id="over">
+                                <a href="https://www.facebook.com/ItalianDeliExpress">
+                                    <img style="width: 30px; height: 30px;" src="assets/imgs/fb.png"></a>
+                            </div>
+                            <div id="over">
+                                <a href="https://www.instagram.com/italiandeliexpress_ec/?hl=es-la">
+                                    <img style="width: 30px; height: 30px;" src="assets/imgs/ig-30.png"></a>
+                            </div>
+                            <div id="over">
+                                <a href="https://www.twitter.com/ItalianDeliX?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                                    <img style="width: 30px; height: 30px;" src="assets/imgs/tw-30.png"></a>
+                            </div>
+                            <div id="over">
+                                <a href="https://www.youtube.com/channel/UCvSZkxbp2mWiR89UoN0ezGQ">
+                                    <img style="width: 30px; height: 30px;" src="assets/imgs/yt-30.png"></a>
+                            </div>
+                            <div id="over">
+                                <a href="https://www.tiktok.com/@italiandeliexpress">
+                                    <img style="width: 30px; height: 30px;" src="assets/imgs/tt-30.png"></a>
+                            </div>
+                        </div>
+                    </ion-col>
+                    <ion-col col-1></ion-col>
+                </ion-row>
+            </ion-label>
+        </ion-item>
+        <ion-item no-lines>
+            <ion-icon name="cedula" slot="start"></ion-icon>
+            <ion-label text-center>
+                <p class="TitleContact">Desarrollado por</p>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+    <div text-center id="over2">
+        <a href="https://www.instagram.com/ingenieriadesoftware/?hl=es-la">
+            <img style="width: 60px; height: 60px;" src="assets/imgs/is_negro_02.png"></a>
+
+    </div>
+</ion-content>

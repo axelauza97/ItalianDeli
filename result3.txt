@@ -1,0 +1,39 @@
+/dqi0omLVCQoLhhgGORDSjtxNhA=
+Keystore type: jks
+Keystore provider: SUN
+
+Your keystore contains 1 entry
+
+Alias name: italiandeli
+Creation date: 03/06/2020
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Edward Cruz, OU=N/A, O=N/A, L=Guayaquil, ST=Guayas, C=EC
+Issuer: CN=Edward Cruz, OU=N/A, O=N/A, L=Guayaquil, ST=Guayas, C=EC
+Serial number: 4ee7c786
+Valid from: Wed Jun 03 16:52:22 COT 2020 until: Sun Oct 20 16:52:22 COT 2047
+Certificate fingerprints:
+	 MD5:  39:56:F4:CD:42:96:BE:DE:91:9D:8C:89:79:5E:7D:14
+	 SHA1: 8B:75:1F:CC:F4:34:29:CB:EC:06:7C:62:D9:F6:EE:64:B8:1B:82:0E
+	 SHA256: 94:43:46:16:60:34:17:7C:8D:E8:39:EA:EF:7D:12:AB:67:35:AD:96:B8:F4:CF:9E:44:32:13:55:F4:28:BB:C0
+Signature algorithm name: SHA256withRSA
+Subject Public Key Algorithm: 2048-bit RSA key
+Version: 3
+
+Extensions: 
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 18 06 C6 46 6C 38 AD BE   84 AD 85 F9 43 62 9D A0  ...Fl8......Cb..
+0010: B3 95 DA 56                                        ...V
+]
+]
+
+
+
+*******************************************
+*******************************************
+
+

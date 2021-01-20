@@ -1,0 +1,111 @@
+@font-face {
+    font-family: AppFont;
+    src: url("../assets/fonts");
+}
+
+page-home {
+    .grid {
+        text-align: center !important;
+        align-content: center !important;
+    }
+    .row {
+        text-align: center !important;
+        align-content: center !important;
+    }
+    /*span {
+        font-family: ‘AppFont’ !important;
+    }*/
+    .formato-logo {
+        width: 30%;
+        height: 25%;
+        display: block;
+        margin: auto;
+    }
+    .formato-next {
+        width: 40px;
+        height: 50px;
+        margin-right: 5px;
+        margin: auto;
+        vertical-align: middle;
+    }
+    .banner {
+        border-radius: 1em;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 98%;
+        height: 150px;
+        padding-left: auto;
+        padding-right: auto;
+    }
+    .card-md+ion-card {
+        margin-top: 0 !important;
+    }
+    .boton {
+        width: 85%;
+        height: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        margin-top: -2px;
+        margin-bottom: 10;
+    }
+    .formato-imagen {
+        width: 100%;
+        height: 100%;
+    }
+    /*ion-slide:hover {
+        background: rgba(205, 9, 9, 0.43);
+        cursor: pointer;
+    }
+    span img {
+        width: 100%; //55px;
+        height: 100%;
+    }*/
+    .formato-span-secondary {
+        width: 100%;
+        font-size: 1.3em;
+        text-align: center;
+        color: rgba(0, 169, 93, 0.925);
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    ion-slide {
+        //width: 90%; //90px!important;
+        //height: 100px; //85px!important;
+        background-color: transparent; // #FFF;
+        //float: left;
+        //margin-left: 1.5px!important;
+        //margin-right: 1.5px!important;
+        //border-radius: 50px!important;
+        //border-radius: 1em;
+    }
+    #banner-slide {
+        height: 156px;
+        background-color: transparent; //rgba(194, 193, 194, 0.52);
+    }
+    #option-slide {
+        //background-color: green; //height: 50px;
+        //height: 162px;
+        //margin-left: 1px; //padding: 0;
+        width: 156px;
+        //background: rgba(205, 9, 9, 0.43);
+        /*ion-slide:hover {
+            //width: 40%; //55px;
+            //height: cover;
+            background: rgba(205, 9, 9, 0.43);
+            //cursor: pointer;
+        }*/
+        span img {
+            width: 100%;
+            height: 162px;
+            //margin-bottom: -4px;
+        }
+        //padding-bottom: -4px;
+        //width: 40%;
+        //background-color: transparent; //rgba(194, 193, 194, 0.52);
+    }
+}

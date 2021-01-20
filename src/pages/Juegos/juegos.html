@@ -1,0 +1,70 @@
+<!--
+  Generated template for the BebidasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content>
+
+
+    <ion-list>
+        <ion-item *ngFor="let juego of juegos" style="background-color:transparent">
+
+            <ion-grid no-padding>
+
+                <ion-row>
+                    <!--margin-top-->
+                    <ion-col class="checkbox" width-10 center>
+                        <ion-item style="background-color:transparent" no-lines>
+                            <ion-checkbox mode="ios" [(ngModel)]="juego.checked" (ionChange)="handlerCheckbox(juego)" color="secondary_red"></ion-checkbox>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col width-40 class="body" center>
+                        <ion-item style="background-color:transparent" no-lines text-wrap>
+                            <!--<ion-row center>-->
+                            <span ion-text color="black"><strong>{{juego.nombre}}</strong></span>
+                            <!--   </ion-row>
+                        -->
+                        </ion-item>
+
+                        <ion-row center>
+
+                            <ion-col width-40 text-center>
+                                <img [hidden]="juego.cantidad < 2 " class="formato-remove" no-padding name="remove-circle" tappable (click)="disminuirCantidad(juego)" src='assets/imgs/sub.png'>
+                                <!--<ion-icon name="remove-circle" class="text-2x" tappable (click)="disminuirCantidad(bebida)" [hidden]="bebida.cantidad < 2 " color="secondary_red"></ion-icon>-->
+                            </ion-col>
+                            <ion-col width-20 text-center>{{juego.cantidad}}</ion-col>
+                            <ion-col width-40 text-center>
+                                <img class="formato-add" no-padding name="add-circle" tappable (click)="aumentarCantidad(juego)" src='assets/imgs/add.png'>
+                                <!--<ion-icon name="add-circle" class="text-2x" tappable (click)="aumentarCantidad(bebida)" color="secondary_red"></ion-icon>-->
+                            </ion-col>
+                        </ion-row>
+                        <!--</ion-item>-->
+                    </ion-col>
+                    <ion-col width-60 class="resumen">
+                        <!--<ion-item style="background-color:transparent; width: 100%" no-lines>
+                            <ion-row center>-->
+                        <ion-avatar item-end>
+                            <img width="cover" height="cover" float-right src="{{juego.imagenUrl}}" />
+                        </ion-avatar>
+                        <!--</ion-row>
+                            <ion-row center>-->
+                        <h1 class="costo" text-right> ${{juego.costoBase * juego.cantidad | number : '1.2-2'}}</h1>
+                        <!--</ion-row>
+                        </ion-item>-->
+                    </ion-col>
+
+                </ion-row>
+            </ion-grid>
+
+
+
+        </ion-item>
+    </ion-list>
+
+
+
+
+</ion-content>

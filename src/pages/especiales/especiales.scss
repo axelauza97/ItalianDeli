@@ -1,0 +1,52 @@
+page-especiales {
+    .tab-item.tab-item-active,
+    .tab-item.active,
+    .tab-item.activated {
+        color: red;
+        /*a {
+            padding-top: 10px
+        }*/
+    }
+    .formato-logo {
+        width: 30%;
+        height: 25%;
+        display: block;
+        margin: auto;
+    }
+    .formato-next {
+        width: 40px;
+        height: 50px;
+        margin-right: 5px;
+        margin: auto;
+        vertical-align: middle;
+    }
+    ion-tabs {
+        span {
+            padding-top: 10px
+        }
+        //esta es la cabecera
+        //background-color: red !important;
+        /*a {
+            padding-top: 10px;
+            vertical-align: middle
+        }*/
+    }
+    /*ion-tabs {
+        font-weight: bold;
+        font-size: 15px;
+    }*/
+    /*.tabs {//este es el cuerpo de los tabs
+        //padding-top: 55px;
+    }*/
+    ion-item {
+        border-radius: 20px !important;
+        /*padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-top: 5px;*/
+    }
+    /*h2 {
+        font-family: 'Hand Of Sean';
+        font-weight: 45 //--ion-font-family: 'Hand Of Sean';
+    }*/
+}

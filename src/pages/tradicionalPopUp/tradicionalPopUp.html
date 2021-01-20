@@ -1,0 +1,49 @@
+<!--<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <ion-row align-items-center>
+                <ion-col width-50>
+                    <span float-left ion-text>Promoción del día</span>
+                </ion-col>
+            </ion-row>
+        </ion-title>
+    </ion-navbar>
+</ion-header> -->
+<ion-content style="background: rgba(0, 0, 0, 0.5)">
+    <!--*ngIf="combos.length > 0"-->
+    <ion-list>
+        <!--*ngFor="let combo of combos"-->
+        <ion-item class="sample-modal-page">
+            <ion-card style="margin-top: 0%" class="tarjeta-col">
+                <button class="boton-cerrar" style="margin-bottom: 0%" (click)="cerrarModal();">
+                  <img src="assets/imgs/x.png"/>
+              </button>
+                <img class="formato-imagen" src="assets/imgs/2da-a-mitad-de-precio.png" />
+                <ion-card-content class="espacio-contenido">
+                    <!--<ion-card-title style="color:  rgb(190,29,62);font-size: 100%; margin:0%">
+                        Aplica para el mismo tamaño, de igual o menor valor!!!
+                    </ion-card-title>-->
+                    <ion-item style="background: transparent" class="propiedades">
+                        <ion-textarea class="textare-style" rows="2" cols="1" readonly value="Aplica para el mismo tamaño, de igual o menor valor!!!">
+                        </ion-textarea>
+                    </ion-item>
+                </ion-card-content>
+                <ion-row no-padding style="margin-top: 0%">
+                    <!--<ion-col>
+                        <span style="margin-left: 4%" text-left>Desde</span>
+                        <span style="color: #1ABC9C; font-size: 170%">${{ combo.COSTO }}</span>
+                    </ion-col>-->
+                    <!--id="{{combo.id}} "-->
+                    <ion-col style="color: #1ABC9C;">
+                        <button style="color: #1ABC9C; height: 70%;" ion-button clear small float-right (click)="ordenar($event)">
+                            <img class="imagen-boton" src="assets/imgs/yo-quiero-pizza.png"/>
+                        </button>
+                    </ion-col>
+                </ion-row>
+            </ion-card>
+        </ion-item>
+    </ion-list>
+</ion-content>
